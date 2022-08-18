@@ -1,0 +1,9 @@
+.artist-img {
+  max-width: 80%;
+}
+
+@media screen and (min-width: 400px) {
+  .artist-img {
+    max-width: 40%;
+  }
+}
