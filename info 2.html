@@ -18,12 +18,12 @@
 <!-- our styles -->
 <link rel="stylesheet" href="/styles/generics.css">
 <link rel="stylesheet" href="/styles/main.css">
-<link rel="stylesheet" href="/styles/maze-map.css">
+<link rel="stylesheet" href="/styles/info.css">
+
 
 <!-- our scripts -->
-<script src="/scripts/maze-map.js" type="module"></script>
-<!-- <script src="/scripts/broadcast.js" type="module"></script> -->
-<title>Maze of Adventures</title>
+<!-- <script src="" type="module"></script> -->
+<title>Info</title>
 </head>
 
 <body>
@@ -45,37 +45,37 @@
         <li><button class="dropdown-item" type="button"><a href="map.html">Start your adventure</a></button></li>
       </ul>
     </div>
-    <div>
-      <h1 id="broadcastMount" class="broadcast"><a href="./info.html">The Golden Key</a></h1>
-    </div>
-    <!-- <h2 id="broadcastMount" class="broadcast"></h2> -->
+
   </header>
   <main>
-
-    <section class="map-container">
-
-      <div id="mazeMap"></div>
+    <section class="info">
+      <h1 class="title">The Golden Key</h1>
+      <p>Fusce placerat ante dui, sit amet finibus justo aliquet at. Sed ut ipsum mauris. Praesent lacinia consectetur
+        felis, eu
+        accumsan urna dictum vitae. Vestibulum porttitor finibus nisl, ut molestie ipsum condimentum et. Aenean vel
+        justo odio.
+        Sed elementum mattis neque.
     </section>
 
+    <!-- TODO ADD Practical basic info (in bullet points) it’s free, it’s for adults and families, etc etc, accessibility, that apply to all, then please refer to each for details about each location.  -->
+
+    <section class="contents">
+      <h2><a href="/fairs/st-pauls.html">St Paul’s Cathedral Fair</a></h2>
+      <h2><a href="/fairs/guildhall.html">Guildhall Fair</a></h2>
+      <h2><a href="/fairs/london-wall.html">London Wall Fair</a></h2>
+      <h2><a href="maze.html">The Maze of Adventures</a></h2>
+      <h2><a href="#">The Hunt</a></h2>
+      <h2><a href="map.html">Start your adventure</a></h2>
+    </section>
+
+
   </main>
-
-
   <footer>
-    <div class="controls-container">
-      <h2>The Maze of Adventures</h2>
 
-      <a id="locateBtn" class="control-item"><img src="/assets/img/locate.png" class="icon"><span>LOCATE ME</span></a>
-    </div>
-    <!-- <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
-      Single toggle
-    </button> -->
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALqUsSyaTycZPpxIkDGMWukm2P7cmLsQs&callback=initMap&v=weekly"
-    defer></script>
 </body>
 
 </html>

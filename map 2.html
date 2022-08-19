@@ -18,12 +18,12 @@
 <!-- our styles -->
 <link rel="stylesheet" href="/styles/generics.css">
 <link rel="stylesheet" href="/styles/main.css">
-<link rel="stylesheet" href="/styles/maze-map.css">
+<link rel="stylesheet" href="/styles/map.css">
 
 <!-- our scripts -->
-<script src="/scripts/maze-map.js" type="module"></script>
-<!-- <script src="/scripts/broadcast.js" type="module"></script> -->
-<title>Maze of Adventures</title>
+<script src="/scripts/map.js" type="module"></script>
+<script src="/scripts/broadcast.js" type="module"></script>
+<title>Map</title>
 </head>
 
 <body>
@@ -46,15 +46,13 @@
       </ul>
     </div>
     <div>
-      <h1 id="broadcastMount" class="broadcast"><a href="./info.html">The Golden Key</a></h1>
+      <h1 id="broadcastMount" class="broadcast">The Golden Key PAGE UNFINISHED</h1>
     </div>
     <!-- <h2 id="broadcastMount" class="broadcast"></h2> -->
   </header>
   <main>
-
     <section class="map-container">
-
-      <div id="mazeMap"></div>
+      <div id="map"></div>
     </section>
 
   </main>
@@ -62,8 +60,15 @@
 
   <footer>
     <div class="controls-container">
-      <h2>The Maze of Adventures</h2>
-
+      <a href="./landing.html" class="control-item">
+        <img src="/assets/img/back-arrow.png" class="icon">
+        <span>BACK</span>
+      </a>
+      <a id="adventureBtn" data-toggle="button" aria-pressed="false" class="control-item"><img
+          src=" /assets/img/keyhole-circle.png" class="icon">
+        <span>ADVENTURE</span></a>
+      <a id="fairBtn" class="control-item"><img src="/assets/img/fair-icon.png" class="icon">
+        <span>FAIRS</span></a>
       <a id="locateBtn" class="control-item"><img src="/assets/img/locate.png" class="icon"><span>LOCATE ME</span></a>
     </div>
     <!-- <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">

@@ -1,0 +1,7 @@
+body {
+  text-align: center;
+}
+
+section.info > .hero {
+  max-width: 80%;
+}

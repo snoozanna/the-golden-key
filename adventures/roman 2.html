@@ -18,12 +18,12 @@
 <!-- our styles -->
 <link rel="stylesheet" href="/styles/generics.css">
 <link rel="stylesheet" href="/styles/main.css">
-<link rel="stylesheet" href="/styles/maze-map.css">
+<link rel="stylesheet" href="/styles/adventures/adventures.css">
+
 
 <!-- our scripts -->
-<script src="/scripts/maze-map.js" type="module"></script>
-<!-- <script src="/scripts/broadcast.js" type="module"></script> -->
-<title>Maze of Adventures</title>
+<!-- <script src="" type="module"></script> -->
+<title>Roman Adventure</title>
 </head>
 
 <body>
@@ -39,43 +39,45 @@
         <li><button class="dropdown-item" type="button"><a href="/fairs/guildhall.html">Guildhall Fair</a></button></li>
         <li><button class="dropdown-item" type="button"><a href="/fairs/london-wall.html">London Wall Fair</a></button>
         </li>
-        <li><button class="dropdown-item" type="button"><a href="./maze-map.html">The Maze of Adventures</a></button>
-        </li>
         <li><button class="dropdown-item" type="button"><a href="#">The Hunt</a></button></li>
         <li><button class="dropdown-item" type="button"><a href="map.html">Start your adventure</a></button></li>
       </ul>
     </div>
     <div>
-      <h1 id="broadcastMount" class="broadcast"><a href="./info.html">The Golden Key</a></h1>
+      <h1>The Golden Key</h1>
     </div>
-    <!-- <h2 id="broadcastMount" class="broadcast"></h2> -->
   </header>
   <main>
-
-    <section class="map-container">
-
-      <div id="mazeMap"></div>
+    <section>
+      <h2 class="title">Roman Adventure</h2>
+      <h3 class="subtitle">Location: <a href="#">Door 1</a></h3>
+      <p>Adipiscing at in tellus integer feugiat. Tortor at auctor urna nunc id cursus. Ut morbi tincidunt augue
+        interdum velit euismod. Tincidunt vitae semper quis lectus nulla at volutpat diam ut.</p>
+      <h3 class="subtitle">Key info:</h3>
+      <ul>
+        <li>
+          <p>Family Friendly</p>
+        </li>
+        <li>
+          <p>Wheelchair accessible</p>
+        </li>
+      </ul>
     </section>
-
+    <section class="begin-adventure">
+      <h3 class="subtitle">Found the password?</h3>
+      <button><a href="#">
+          <p>Begin adventure</p>
+        </a></button>
+    </section>
   </main>
-
-
   <footer>
-    <div class="controls-container">
-      <h2>The Maze of Adventures</h2>
-
-      <a id="locateBtn" class="control-item"><img src="/assets/img/locate.png" class="icon"><span>LOCATE ME</span></a>
-    </div>
-    <!-- <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
-      Single toggle
-    </button> -->
+    <a href="/info.html">
+      <p>Home</p>
+    </a>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALqUsSyaTycZPpxIkDGMWukm2P7cmLsQs&callback=initMap&v=weekly"
-    defer></script>
 </body>
 
 </html>
