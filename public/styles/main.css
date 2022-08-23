@@ -7,7 +7,7 @@
 :root {
   --main-bg-color: #db4d59;
   --accent-colour-primary: yellow;
-  --accent-colour-secondary: rgb(115, 105, 255);
+  --accent-colour-secondary: #756bff;
   --font-headings: "Kiwi Maru", serif;
   --font-body: "Noto Sans", sans-serif;
   --font-color: #fff;
@@ -101,6 +101,21 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* FOOTER  */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer-item > p {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+.footer-wrapper:last-child {
+  text-align: right;
 }
 
 /* HAMBURGER MENU */
