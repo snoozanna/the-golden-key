@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artists",
+  "info": {
+    "name": "Artists",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "img": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "shows": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "biog": {
+      "type": "text"
+    },
+    "website": {
+      "type": "string"
+    },
+    "showname": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "tags": {
+      "collection": "tags"
+    },
+    "fair": {
+      "via": "artists",
+      "model": "fairs"
+    }
+  }
+}

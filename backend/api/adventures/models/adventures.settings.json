@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "adventures",
+  "info": {
+    "name": "Adventures",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "startlocation": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "information": {
+      "type": "text"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Name",
+      "required": true
+    },
+    "tags": {
+      "collection": "tags"
+    }
+  }
+}
