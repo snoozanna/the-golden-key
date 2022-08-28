@@ -23,11 +23,11 @@ module.exports = ({ env }) => ({
   connection: {
     client: "postgres",
     connection: {
-      host: config.DATABASE_HOST,
-      port: config.DATABASE_PORT,
-      database: config.DATABASE_NAME,
-      user: config.USERNAME,
-      password: config.PASSWORD,
+      host: env.DATABASE_HOST,
+      port: env.DATABASE_PORT,
+      database: env.DATABASE_NAME,
+      user: env.USERNAME,
+      password: env.PASSWORD,
       ssl: {
         rejectUnauthorized: false,
       },
